@@ -33,3 +33,13 @@ uv run 02-worker.py
 We can see the logs of our jobs and access dashboard [Chancy dashboard](http://localhost:8000/jobs/succeeded) with the credentials (admin/admin).
 
 ![alt text](image.png)
+
+
+And we can look into details for each job
+
+![alt text](image-2.png)
+
+
+Or into details for specific queues about the number of jobs already processed:
+
+![alt text](image-3.png)
