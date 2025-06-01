@@ -31,7 +31,7 @@ And now we can initialize our worker to process the jobs and view our dashboard.
 uv run 02-worker.py
 ```
 
-We can see the logs of our jobs and access dashboard [Chancy dashboard](http://localhost:8000/jobs/succeeded) with the credentials (admin/admin).
+We can see the logs of our jobs and access the [Chancy dashboard](http://localhost:8000/jobs/succeeded) with the credentials (admin/admin).
 
 ![alt text](image.png)
 
