@@ -10,17 +10,18 @@ Configure the postgres URI for your application
 export CHANCY_DB_URL="postgresql://postgres:postgres@localhost:5430/postgres"
 ```
 
-Then you can initialize the database migrations and creating the queues:
+Then you can initialize the database with the migrations and create the queues:
 ```sh
 uv run 00-init.py
 ```
 
-After that all tables as in the example:
+For the migrations that are the tables that will be created.
 
 ![alt text](image-1.png)
 
 
-Then we can initialize our first jobs
+Then we can initialize our first jobs.
+
 ```sh
 uv run 01-create-jobs.py
 ```
@@ -35,11 +36,11 @@ We can see the logs of our jobs and access dashboard [Chancy dashboard](http://l
 ![alt text](image.png)
 
 
-And we can look into details for each job
+And we can look into details for each job.
 
 ![alt text](image-2.png)
 
 
-Or into details for specific queues about the number of jobs already processed:
+Or into details for specific queues about the number of jobs already processed.
 
 ![alt text](image-3.png)
