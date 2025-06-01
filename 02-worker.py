@@ -5,7 +5,7 @@ from chancy.plugins.api import Api
 from chancy.plugins.api.auth import SimpleAuthBackend
 
 chancy = Chancy(
-    os.getenv('CHANCY_DB_URL', "postgresql://postgres:postgres@localhost:5430/postgres"),
+    os.getenv('CHANCY_DB_URL'),
     plugins=[
         Api(
             port=int(os.getenv('CHANCY_API_PORT', 8000)),
@@ -19,13 +19,6 @@ chancy = Chancy(
 
 async def main():
     async with chancy:
-        # Run the database migrations
-        # await chancy.migrate()
-        # # Declare the default queue
-        # await chancy.declare(Queue("default"))
-        # await chancy.declare(Queue("test"))
-        # await chancy.declare(Queue("another"))
-        # Start the worker (ctrl+c to exit)
         async with Worker(chancy) as worker:
             await worker.wait_for_shutdown()
 

@@ -4,7 +4,7 @@ from jobs import fibonacci, hello_world
 from chancy import Chancy
 
 chancy = Chancy(
-    os.getenv('CHANCY_DB_URL', "postgresql://postgres:postgres@localhost:5430/postgres")
+    os.getenv('CHANCY_DB_URL')
 )
 
 async def main():

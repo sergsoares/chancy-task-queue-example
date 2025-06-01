@@ -5,7 +5,7 @@ from chancy.plugins.api import Api
 from chancy.plugins.api.auth import SimpleAuthBackend
 
 chancy = Chancy(
-    os.getenv('CHANCY_DB_URL', "postgresql://postgres:postgres@localhost:5430/postgres"),
+    os.getenv('CHANCY_DB_URL'),
     plugins=[
         Api(
             port=int(os.getenv('CHANCY_API_PORT', 8000)),
