@@ -2,9 +2,7 @@
 
 Application using [Chancy](https://tkte.ch/chancy/) that is a Task queue in Python that support Schedule tasks for future, recurrency tasks and even workflow with dependency using postgres as a storage.
 
-This repo contains a simple example structure with Chancy for demonstrate usage coming configured with the dashboard.
-
-For this project we will use [uv package manager](https://docs.astral.sh/uv/) to install the dependencies and [DBngin](https://dbngin.com/) to create a postgresql.
+This repo contains a simple example structure with Chancy for demonstrate usage coming configured with the dashboard, for this project we will use [uv package manager](https://docs.astral.sh/uv/) to install the dependencies and [DBngin](https://dbngin.com/) to create a postgresql.
 
 
 Configure the postgres URI for your application
